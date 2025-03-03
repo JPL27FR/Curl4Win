@@ -38,6 +38,7 @@ jobs:
           fetch-depth: 8
       - name: 'build'
         run: |
+          git config --global https.proxy http://w3p1.atos-infogerance.fr:8080
           git clone --depth 1 https://github.com/curl/curl-for-win
           mv curl-for-win/* .
           export CW_CONFIG='-main-werror-win-x64'
