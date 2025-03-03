@@ -1,0 +1,5 @@
+LISEZMOI.txt
+----------------------------------------------
+https://github.com/curl/curl/issues/13672
+
+https://github.com/curl/curl/blob/ca6b05b6dc4c9ff28c52f34249000a56c5b6ba37/.github/workflows/curl-for-win.yml
