@@ -21,7 +21,7 @@ concurrency:
 permissions: {}
 
 env:
-  CW_NOGET: ''
+  CW_NOGET: 'openssl'
   CW_MAP: '0'
   CW_JOBS: '5'
   CW_NOPKG: '1'
