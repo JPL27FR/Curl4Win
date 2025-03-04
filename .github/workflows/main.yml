@@ -24,7 +24,6 @@ env:
   CW_NOGET: 'openssl'
   CW_MAP: '0'
   CW_JOBS: '5'
-  CW_NOPKG: '0'
   DOCKER_CONTENT_TRUST: '1'
 
 jobs:
@@ -40,7 +39,7 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/curl/curl-for-win
           mv curl-for-win/* .
-          export CW_CONFIG='-main-win-x64-openssl'
+          export CW_CONFIG='-main-win-openssl'
           export CW_REVISION='${{ github.sha }}'
           . ./_versions.sh
           docker trust inspect --pretty "${DOCKER_IMAGE}"
